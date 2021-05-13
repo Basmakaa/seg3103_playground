@@ -11,6 +11,8 @@ Instruction to see the java version :
 $ java --version
 
 Output: 
+![image](https://user-images.githubusercontent.com/58495262/118199204-851aa080-b420-11eb-8dc2-b754004940e8.png)
+
  
 
 Instruction to compile the code on Newmath_java folder: 
