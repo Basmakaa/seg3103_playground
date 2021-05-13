@@ -2,32 +2,70 @@
 
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+This repository contain the code, insers and results for the first lab of the course SEG3503 during the summer term 2021.
 
-## Code Example
+## Java
+I am running Java openjdk 14
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+Instruction to see the java version : 
+$ java --version
 
-## Motivation
+Output: 
+ 
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+Instruction to compile the code on Newmath_java folder: 
+javac -encoding UTF-8 --source-path src -d dist src/*.java
 
-## Installation
+Instruction to execute the code: 
+java -cp ./dist Main
 
-Provide code examples and explanations of how to get the project.
+Example of Output: 
+ 
 
-## API Reference
+##Junit
+I am working with JUnit 5 (via Console standalone 1.7.1)
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+To run JUnit, I need to compile the application, and then compile the test code
 
-## Tests
+Instruction to compile the application :
+javac -encoding UTF-8 --source-path src -d dist -cp lib/junit-platform-console-standalone-1.7.1.jar test/*.java??
 
-Describe and show how to run the tests with code examples.
+Instruction to run the test : 
+java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
 
-## Contributors
+Output Screenshot :
+ 
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+##Elixir 
 
-## License
+I am running Elixir 11.4 with Erlang 23
 
-A short snippet describing the license (MIT, Apache, etc.)
+Instruction to see the version :
+$ elixir --version
+
+Output Screenshot :
+ 
+
+
+Instruction to compile the program:
+mix compile
+
+Instruction to execute the program:
+iex -S mix
+
+Output screenshot:
+
+ 
+
+
+
+## ExUnit
+
+Instruction to run the test:
+mix test
+
+Output screenshot:
+
+ 
+
+
