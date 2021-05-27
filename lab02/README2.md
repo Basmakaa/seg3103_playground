@@ -34,6 +34,8 @@ Screenshot results:
 
 ![test2](https://user-images.githubusercontent.com/58495262/119890290-a5a92700-bf05-11eb-8727-3b117b9acc9d.png)
 
+![TestZoomed](https://user-images.githubusercontent.com/58495262/119892075-b3f84280-bf07-11eb-9c77-b594ba9edc33.PNG)
+
 All of the tests successfully passed !
 
 
