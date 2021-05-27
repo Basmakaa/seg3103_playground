@@ -4,6 +4,8 @@
 
 This subfolder contain the solution and results of the Lab2
 
+## IMPORTANT NOTE: IF THE IMAGES AREN'T CLEAR PLEASE REFER TO THE SCREENSHOTS FOLDER, i included all the screenshots there. 
+
 ## EXERCICE 1: Register Tests
 Fist i did execute the command : java -jar user-registration-app-0.1.0.jar
 and then had access to the link put on the lab : http://localhost:8080/.
@@ -13,7 +15,7 @@ The register page looks like this
 
 After executing and compiling the tests here is the table of the expected vs the actual results. We can see that only one test failed and thats because inputs were written in wrong format.  
 
-![tables](https://user-images.githubusercontent.com/58495262/119886819-67116d80-bf01-11eb-8333-b4ff5bd51494.png)
+![tables](https://user-images.githubusercontent.com/58495262/119891613-2fa5bf80-bf07-11eb-85f1-abf557ca5f1d.png)
 
 
 ## EXERCICE2 : Date tests
