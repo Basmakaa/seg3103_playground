@@ -161,10 +161,9 @@ New isThirttDayMonth():
 
 ![isthirty](https://user-images.githubusercontent.com/58495262/120704392-84f04c80-c484-11eb-8c11-71d9b80c853e.png)
 
-Compared to the initial code coverage generated, we can see that the coverage for both refactored method improved. setDay() went from 64% instruction coverage to 80% and isThirtyDayMonth went from 87% branch coverage to 100% branch coverage.
+After those modifications, here is the new report that i got :
+![refactor_report](https://user-images.githubusercontent.com/58495262/120705442-d5b47500-c485-11eb-9d7b-c1202a527cb2.png)
 
-The instruction coverage for setDay improved due to having less if statement to test. Initially, this method had 5 if statements and after our refactorisation, it only has 3. This is what makes the instruction coverage change for the better.
-
-As for isThirtyDayMonth, the branch coverage improved due to having less possibilites inside the if statement. Before we made changes, the method had 4 OR statements. Now, it only has to check if the month is part of a list of month that have 30 days. This makes the code a bit cleaner and reduces the number of branches to check while testing.
+Compared to the initial code coverage generated, we can see that the coverage for both refactored method improved. setDay() went from 64% instruction coverage to 80% and isThirtyDayMonth went from 87% branch coverage to 100% branch coverage.The instruction coverage for setDay improved due to having less if statement to test. Initially, this method had 5 if statements and after our refactorisation, it only has 3. This is what makes the instruction coverage change for the better.As for isThirtyDayMonth, the branch coverage improved due to having less possibilites inside the if statement. Before we made changes, the method had 4 OR statements. Now, it only has to check if the month is part of a list of month that have 30 days. This makes the code a bit cleaner and reduces the number of branches to check while testing.
 
 

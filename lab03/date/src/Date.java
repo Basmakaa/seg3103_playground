@@ -1,3 +1,4 @@
+
 public class Date {
 
 	/* Data fields */
@@ -113,7 +114,7 @@ public class Date {
 	 */
 	private boolean isThirtyDayMonth() {
 		ArrayList<Integer> myarray = new ArrayList<>(Arrays.asList(4,6,9,11));
-		if (myarray.contains(this.monthy)) {
+		if (myarray.contains(this.month)) {
 			return true;
 		}
 		else return false;
