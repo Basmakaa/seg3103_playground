@@ -9,7 +9,7 @@ class fizzbuzz_test {
 			return "Fizz";
 		}
 		else {
-		} else if (num % 4 == 0){
+		} else if (num % 5 == 0){
 			return "Buzz";
 		}
 		return num.toString();
@@ -28,7 +28,7 @@ class fizzbuzz_test {
 	}
 	@Test
 	public void test_fizzBuzz4(){
-		assertEquals("Buzz", fizzBuzz(4));
+		assertEquals("Buzz", fizzBuzz(5));
 	}
     
 }
