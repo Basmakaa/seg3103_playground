@@ -14,7 +14,10 @@ class fizzbuzz_test {
 		 else if (num % 5 == 0){
 			return "Buzz";
 		}
-		
+		else if( num == 0){
+			return "0";
+
+		}
 		else {
 		return Integer.toString(num);
 		}
