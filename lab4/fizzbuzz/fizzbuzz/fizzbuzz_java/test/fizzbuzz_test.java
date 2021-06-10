@@ -15,7 +15,9 @@ class fizzbuzz_test {
 			return "Buzz";
 		}
 		
+		else {
 		return Integer.toString(num);
+		}
 	}
 
 	@Test
@@ -33,6 +35,11 @@ class fizzbuzz_test {
 	public void test_fizzBuzz4(){
 		assertEquals("Buzz", fizzBuzz(5));
 	}
+	@Test
+	public void test_fizzBuzz5(){
+		assertEquals("0", fizzBuzz(0));
+	}
+
 	
     
 }
