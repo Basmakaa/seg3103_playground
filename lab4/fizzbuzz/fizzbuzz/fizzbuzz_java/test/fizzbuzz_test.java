@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Test;
 class fizzbuzz_test {
     
 	private String fizzBuzz(int num){
+		if (num % 3 == 0){
+			return "Fizz";
+		}
 		return num.toString();
 	}
 
