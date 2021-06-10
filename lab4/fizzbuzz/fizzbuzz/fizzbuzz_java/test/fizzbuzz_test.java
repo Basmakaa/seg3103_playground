@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 class fizzbuzz_test {
     
 	private String fizzBuzz(int num){
-		return "2";
+		return num.toString();
 	}
 
 	@Test
