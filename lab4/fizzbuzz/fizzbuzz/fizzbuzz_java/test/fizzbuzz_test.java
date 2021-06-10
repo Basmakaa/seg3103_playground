@@ -22,5 +22,9 @@ class fizzbuzz_test {
 	@Test void test_fizzBuzz3(){
 		assertEquals("Fizz", fizzBuzz(3));
 	}
+	@Test
+	public void test_fizzBuzz4(){
+		assertEquals("Buzz", fizzBuzz(4));
+	}
     
 }
