@@ -16,5 +16,8 @@ class fizzbuzz_test {
 	public void test_fizzBuzz2(){
 		assertEquals("2", fizzBuzz(2));
 	}
+	@Test void test_fizzBuzz3(){
+		assertEquals("Fizz", fizzBuzz(3));
+	}
     
 }
