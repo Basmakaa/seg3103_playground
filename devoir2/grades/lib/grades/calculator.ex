@@ -3,8 +3,8 @@ defmodule Grades.Calculator do
     #Q2.1 AVG method
     avg_homework = avg(homework)
     avg_labs = avg(labs)
-
-    mark = 0.2 * avg_labs + 0.3 * avg_homework + 0.2 * midterm + 0.3 * final
+    #Q2.3 calc grade method
+    mark = calculate_grade(avg_labs, avg_homework, midterm, final)
     round(mark * 100)
   end
 
@@ -25,7 +25,8 @@ defmodule Grades.Calculator do
       if failed_to_participate?(avg_homework, avg_exams, num_labs) do
       "EIN"
     else
-      mark = 0.2 * avg_labs + 0.3 * avg_homework + 0.2 * midterm + 0.3 * final
+      #Q2.3 calc grade method
+      mark = calculate_grade(avg_labs, avg_homework, midterm, final)
 
       cond do
         mark > 0.895 -> "A+"
@@ -60,7 +61,8 @@ defmodule Grades.Calculator do
      if failed_to_participate?(avg_homework, avg_exams, num_labs) do
       0
     else
-      mark = 0.2 * avg_labs + 0.3 * avg_homework + 0.2 * midterm + 0.3 * final
+       #Q2.3 calc grade method
+       mark = calculate_grade(avg_labs, avg_homework, midterm, final)
 
       cond do
         mark > 0.895 -> 10
@@ -93,4 +95,8 @@ defmodule Grades.Calculator do
         false
       end
       end
+      # calc grade Q2.3
+    def calculate_grade(avg_labs, avg_homework, midterm, final) do
+        0.2 * avg_labs + 0.3 * avg_homework + 0.2 * midterm + 0.3 * final
+        end
 end
