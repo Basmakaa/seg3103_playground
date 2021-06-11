@@ -15,7 +15,8 @@ defmodule Grades.Calculator do
     avg_labs = avg(labs)
 
 
-    avg_exams = (midterm + final) / 2
+    #Q2.4 refactoring 2
+    avg_exams = calculate_avg_exams(midterm, final)
 
     #Q2.4 refactoring
     num_labs = get_num_labs(labs)
@@ -48,7 +49,8 @@ defmodule Grades.Calculator do
 
     avg_labs = avg(labs)
 
-    avg_exams = (midterm + final) / 2
+    #Q2.4 refactoring 2
+    avg_exams = calculate_avg_exams(midterm, final)
 
     #Q2.4 refactoring
     num_labs = get_num_labs(labs)
@@ -102,4 +104,8 @@ defmodule Grades.Calculator do
               |> Enum.reject(fn mark -> mark < 0.25 end)
               |> Enum.count()
     end
+    # refactoring 2 Q2.4
+    def calculate_avg_exams(midterm, final) do
+      (midterm + final) / 2
+      end
 end
