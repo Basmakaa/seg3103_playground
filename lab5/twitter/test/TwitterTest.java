@@ -122,7 +122,7 @@ class TwitterTest {
     @Test
     void isMentionned_handleNull() {
         Twitter twitter = createTweet ("");
-      boolean actual;
+        boolean actual;
 
         actual = twitter.isMentionned("me");
         assertEquals(false, actual);
