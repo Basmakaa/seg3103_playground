@@ -12,7 +12,7 @@ class TwitterTest {
         Twitter twitter = new Twitter();
 
         boolean actual;
-
+        
         actual = twitter.isMentionned("me");
         assertEquals(true, actual);
     }
@@ -60,6 +60,18 @@ class TwitterTest {
     //   // isMentionned("me") should be true
     //   // isMentionned("you") should be false
     // }
+    @Test
+    void isMentionned_lookForAtSymbol() {
+    
+      Twitter twitter = createTweet ("Hello @me");
+      boolean actual;
+
+        actual = twitter.isMentionned("meat");
+        assertEquals(true, actual);
+
+        actual = twitter.isMentionned("me");
+        assertEquals(false, actual);
+    }
 
     // @Test
     // void isMentionned_dontReturnSubstringMatches() {
@@ -68,6 +80,18 @@ class TwitterTest {
     //   // isMentionned("meat") should be true
     // }
 
+    @Test
+    void isMentionned_dontReturnSubstringMatches() {
+        Twitter twitter = createTweet ("Hello @meat");
+      boolean actual;
+
+        actual = twitter.isMentionned("me");
+        assertEquals(true, actual);
+
+        actual = twitter.isMentionned("meat");
+        assertEquals(false, actual);
+    }
+
     // @Test
     // void isMentionned_superStringNotFound() {
     //   // Assuming a tweet like "hello @me"
@@ -75,10 +99,35 @@ class TwitterTest {
     //   // isMentionned("meat") should be false
     // }
 
+    @Test
+    void isMentionned_superStringNotFound() {
+        Twitter twitter = createTweet ("Hello @me");
+        boolean actual;
+  
+          actual = twitter.isMentionned("me");
+          assertEquals(true, actual);
+  
+          actual = twitter.isMentionned("you");
+          assertEquals(false, actual);
+      }
+
+
     // @Test
     // void isMentionned_handleNull() {
     //   // Assuming no tweet is available (i.e. null)
     //   // isMentionned("me") should be false
     //   // isMentionned("meat") should be false
     // }
+    
+    @Test
+    void isMentionned_handleNull() {
+        Twitter twitter = createTweet ("");
+      boolean actual;
+
+        actual = twitter.isMentionned("me");
+        assertEquals(false, actual);
+
+        actual = twitter.isMentionned("meat");
+        assertEquals(false, actual);
+    }
 }
