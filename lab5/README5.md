@@ -30,6 +30,8 @@ After i did create stubs and added the modifications to the github repository.
 The problem was solved, and the button could work perfectly. 
 ![buttonworks](https://user-images.githubusercontent.com/58495262/124367086-50f27d80-dc22-11eb-9027-29e564667b38.png)
 
+observations : We can test the front end and the way of displaying the info with the use of fake data and not from using actual calculation in the back end, using stubs on this exercice worked successfully !
+
 ## Twitter : Mocks
 
 FIrst here are the 4 test cases as asked :
