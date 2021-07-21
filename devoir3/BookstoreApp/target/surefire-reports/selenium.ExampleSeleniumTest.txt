@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------
+Test set: selenium.ExampleSeleniumTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 147.097 s <<< FAILURE! - in selenium.ExampleSeleniumTest
+test10  Time elapsed: 62.633 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-B9557N8', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00513733+2504499]
+	Ordinal0 [0x004AC401+2081793]
+	Ordinal0 [0x003B24F0+1058032]
+	Ordinal0 [0x003A74B5+1012917]
+	Ordinal0 [0x003D005B+1179739]
+	Ordinal0 [0x003CC58C+1164684]
+	Ordinal0 [0x003C9DC3+1154499]
+	Ordinal0 [0x003F9B82+1350530]
+	Ordinal0 [0x003F97DA+1349594]
+	Ordinal0 [0x003F5D4B+1334603]
+	Ordinal0 [0x003D22B4+1188532]
+	Ordinal0 [0x003D3149+1192265]
+	GetHandleVerifier [0x0068FB8C+1512252]
+	GetHandleVerifier [0x0073B0DF+2214031]
+	GetHandleVerifier [0x00594BC3+484211]
+	GetHandleVerifier [0x00593E69+480793]
+	Ordinal0 [0x004B218D+2105741]
+	Ordinal0 [0x004B66E8+2123496]
+	Ordinal0 [0x004B6827+2123815]
+	Ordinal0 [0x004BFB73+2161523]
+	BaseThreadInitThunk [0x757AFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77787A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77787A6E+238]
+
+	at selenium.ExampleSeleniumTest.setUp(ExampleSeleniumTest.java:37)
+
+test2  Time elapsed: 22.815 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Bienvenu> but was: <Welcome>
+	at selenium.ExampleSeleniumTest.test2(ExampleSeleniumTest.java:100)
+
