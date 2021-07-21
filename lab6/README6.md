@@ -26,7 +26,8 @@ Then i executed the app using the command : java -jar ./target/BookstoreApp-0.1.
 
 When we get access to localhost:8080 on the browser, the app is showing like the following 
 
-![appscreen](https://user-images.githubusercontent.com/58495262/126386221-604eb2da-42a1-49d0-b32a-c4c7937794ce.png)
+
+![localhostscreen](https://user-images.githubusercontent.com/58495262/126417593-3e0467ba-31bc-4d90-b977-a980371dd460.png)
 
 ## Test developped 
 
